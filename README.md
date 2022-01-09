@@ -1,3 +1,3 @@
 # train-node
 
-Complete NodeJS course with express, socket io and MongoDB
+build real world application, socket io and MongoDB, authentication with JWT
