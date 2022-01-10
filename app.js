@@ -38,14 +38,27 @@ const fs = require('fs')
 // })
 
 //create folder
-if(!fs.existsSync('newfolder')){
-    fs.mkdir('newfolder', (err, data) => {
+// if(!fs.existsSync('newfolder')){
+//     fs.mkdir('newfolder', (err, data) => {
+//         if(err){
+//             console.log(err)
+//         }else {
+//             console.log('A new folder create')
+//         }
+//     })
+// }else{
+//     console.log('The folder already exist')
+// }
+
+//delete folder
+if(fs.existsSync('newfolder')){
+    fs.rmdir('newfolder', (err, data) => {
         if(err){
             console.log(err)
         }else {
-            console.log('A new folder create')
+            console.log('A new folder deleted')
         }
     })
 }else{
-    console.log('The folder already exist')
+    console.log('The folder already deleted')
 }
