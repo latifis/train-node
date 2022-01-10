@@ -11,7 +11,7 @@
 
 const fs = require('fs')
 //read file
-fs.readFile('./note.txt',(err, data) => {
+fs.readFile('./ckmobile/note.txt',(err, data) => {
     if(err){
         console.log(err)
     }else {
