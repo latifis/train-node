@@ -13,4 +13,5 @@ const users = [{
     "avatar": "https://reqres.in/img/faces/8-image.jpg"
 }]
 
-module.exports = users
+const nums = [1, 2, 3]
+module.exports = { users, nums}

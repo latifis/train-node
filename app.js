@@ -6,5 +6,5 @@
 
 // message('me or')
 
-const importedStuff = require('./users');
-console.log(importedStuff);
+const{users, nums} = require('./users');
+console.log(nums);
