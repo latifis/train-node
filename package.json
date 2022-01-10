@@ -1,0 +1,24 @@
+{
+  "name": "train-node",
+  "version": "1.0.0",
+  "description": "build real world application, socket io and MongoDB, authentication with JWT",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/latifis/train-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/latifis/train-node/issues"
+  },
+  "homepage": "https://github.com/latifis/train-node#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

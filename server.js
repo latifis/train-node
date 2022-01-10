@@ -1,8 +1,10 @@
 const http = require('http');
 const fs = require('fs');
 // const { hostname } = require('os');
+const moment = require('moment');
 const port = 3000;
-
+const christmas = "2022-12-25";
+console.log(moment(christmas).format('LL'))
 
 const  server = http.createServer((req,res)=>{
     //if text
@@ -15,6 +17,7 @@ const  server = http.createServer((req,res)=>{
 
     switch (req.url) {
         case '/':
+            console.log('Hello again 2');
             route += 'index.html';
             res.statusCode = 200;
             break;
