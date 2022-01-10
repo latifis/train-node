@@ -3,11 +3,30 @@ const fs = require('fs');
 // const { hostname } = require('os');
 const port = 3000;
 
+
 const  server = http.createServer((req,res)=>{
     //if text
     res.setHeader('Content-Type', 'text/html');
     // res.write('Welcome to ckmobile');
-    fs.readFile('./view/index.html',(err,data)=>{
+
+
+    //routing
+    let route = "./views/";
+
+    switch (req.url) {
+        case '/':
+            route += 'index.html';
+            break;
+        case '/contact':
+            route += 'contact.html';
+            break;
+        default:
+            route += '404.html';
+            break;
+    }
+
+
+    fs.readFile(route,(err,data)=>{
         if(err){
             console.log(err)
             res.end();
