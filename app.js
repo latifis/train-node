@@ -11,11 +11,19 @@
 
 const fs = require('fs')
 //read file
-fs.readFile('./ckmobile/note.txt',(err, data) => {
+// fs.readFile('./ckmobile/note.txt',(err, data) => {
+//     if(err){
+//         console.log(err)
+//     }else {
+//         console.log(data.toString())
+//     }
+// })
+
+//write files
+fs.writeFile('./ckmobile/note.txt', 'A new message', (err, data) => {
     if(err){
         console.log(err)
     }else {
-        console.log(data.toString())
+        console.log('A new message create')
     }
 })
-//write
