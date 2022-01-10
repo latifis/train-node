@@ -91,3 +91,4 @@ const writeStream = fs.createWriteStream('writeStream.txt');
 
 //stream.pipe()
 readStream.pipe(writeStream)
+
